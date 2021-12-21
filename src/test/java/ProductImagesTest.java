@@ -24,7 +24,7 @@ public class ProductImagesTest extends TestBase {
         ProductDetailsPopUpPage productDetailsPage = new ProductDetailsPopUpPage(webdriver);
 
         topMenuPage.
-                moveHoverToWomen().
+                moveMouseToWomenCategory().
                 clickOnBlouses();
         productBox.
                 moveMouseToProductImage().

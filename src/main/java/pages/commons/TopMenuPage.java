@@ -24,7 +24,7 @@ public class TopMenuPage extends BasePage {
         return this;
     }
 
-    public TopMenuPage moveHoverToWomen() {
+    public TopMenuPage moveMouseToWomenCategory() {
         mouseHover(categoryWomen);
         return this;
     }
