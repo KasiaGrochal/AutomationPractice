@@ -27,7 +27,7 @@ public class ProductImagesTest extends TestBase {
                 moveHoverToWomen().
                 clickOnBlouses();
         productBox.
-                mouseHoverProductImage().
+                moveMouseToProductImage().
                 mouseClickOnQuickViewButton().
                 switchToProductDetailsPopUp();
 

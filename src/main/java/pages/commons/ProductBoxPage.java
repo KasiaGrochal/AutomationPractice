@@ -24,7 +24,7 @@ public class ProductBoxPage extends BasePage {
     @FindBy(css = "[id^='fancybox-frame']")
     private WebElement popUpIframe;
 
-    public ProductBoxPage mouseHoverProductImage() {
+    public ProductBoxPage moveMouseToProductImage() {
         mouseHover(productImage);
         return this;
     }
