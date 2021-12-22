@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Compile') {
+            steps {
+                echo 'Szymon mowi'
+                git branch: '${branch}', url: 'https://github.com/KasiaGrochal/AutomationPractice.git'
+                bat 'mvn clean compile'
+                echo 'ok'
+            }
+        }
+        stage('Test') {
+            steps {
+                bat 'mvn clean test'
+                echo 'ok'
+            }
+        }
+    }
+}
